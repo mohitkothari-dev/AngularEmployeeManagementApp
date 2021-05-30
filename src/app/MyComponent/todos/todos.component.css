@@ -1,0 +1,65 @@
+textarea{
+    resize: none;
+}
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /*padding-bottom: 100px; /* height of your footer */
+}
+
+.main-container .navbar a{
+    color: black;
+}
+
+.main-container form {
+    margin: 0 10%;
+}
+
+.main-container .emp_details{
+    margin: 0 10%;
+}
+
+.table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.btn{
+    margin-right: 3%;
+}
+
+.btn-primary{
+    margin-right: 3%;
+}
+
+.btn-success{
+    background-color: #16e045;
+    border-color: #16e045;
+}
+
+.card{
+    border: none;
+    margin-bottom: 3%;
+}
+
+.emp_details{
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #a4b0be;
+    color: white;
+    font-weight: 700;
+}
+
+#footer p{
+    line-height: 50px;
+    text-align: center;
+}

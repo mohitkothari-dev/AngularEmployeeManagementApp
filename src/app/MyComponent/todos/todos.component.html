@@ -1,0 +1,58 @@
+<div class="main-container">
+  <!-- As a heading -->
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">ERF</span>
+    <a href="https://github.com/mohitkothari-dev/AngularEmployeeManagement" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+  </div>
+</nav>
+  <h3 class="text-center mb-3">Employee registration form by Mohit</h3>
+  <form>
+    <div class="mb-3">
+      <label class="form-label">Enter Employee name</label>
+      <input type="text" class="form-control" id="uname" name="uname" #uname required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Enter EmailId</label>
+      <input type="email" class="form-control" id="uemail" name="uemail" #uemail required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Enter Contact number</label>
+      <input type="tel" class="form-control" id="ucontact" name="ucontact" maxlength="10" #ucontact required>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onCreateUser(uname,uemail,ucontact)">Create Employee</button>
+    <!--<button type="button" class="btn btn-danger" (click)="onDeleteAll()">Delete All</button>-->
+  </form>
+  
+  <div class="emp_details">
+    <h3 class="text-info text-center my-2">Your Employees</h3>
+    <div class="card" *ngFor="let user of users; index as i">
+      <div *ngIf="user.name.length>0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 10%;">#</th>
+              <th scope="col" style="width: 30%;">Name</th>
+              <th scope="col" style="width: 30%;">Email</th>
+              <th scope="col" style="width: 30%;">Contact No</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 10%;">{{i}}</td>
+              <td style="width: 30%;">{{user.name}}</td>
+              <td style="width: 30%;">{{user.email}}</td>
+              <td style="width: 30%;">{{user.contact}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-success btn-sm" (click)="onPromoteEmp(i)">PROMOTE</button>
+        <button type="button" class="btn btn-danger btn-sm" (click)="onDeleteEmp(i)">DELETE</button>
+        <button type="button" class="btn btn-warning btn-sm" (click)="onResignedEmp(i)">RESIGNED</button>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+  <p>&copy; Mohit Kothari</p>
+  </footer>
+</div>
