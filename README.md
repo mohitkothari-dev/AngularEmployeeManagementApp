@@ -29,3 +29,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Screen Shots
+
+#### 1. Landing Page
+![welcome-screen-image](SS/WelcomeScreen.JPG)
+
+#### 2. Inserting the Values
+![adding-input](SS/AddingInput.JPG)
+After clicking on the create employee button one row will be added without refreshing the page.
+
+#### 3. Displaying Employee Details
+![dispaying-input](SS/InputAdded.JPG)
+
+#### 4. Resign
+![employee-resign](SS/Resign.JPG)
+
+#### 5. Promotion
+![employee-promote](SS/Promotion.JPG)
